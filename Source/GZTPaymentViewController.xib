@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GZTPaymentViewController">
+            <connections>
+                <outlet property="cancel" destination="phV-8Z-gYW" id="VCu-8d-4xs"/>
+                <outlet property="payButton" destination="rAW-TR-V25" id="uMV-bN-Wtq"/>
+                <outlet property="textView" destination="uWa-ib-Yfg" id="32B-t6-QTV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWa-ib-Yfg">
+                    <rect key="frame" x="36" y="175" width="528" height="44"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SjN-dp-7Hl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAW-TR-V25">
+                    <rect key="frame" x="250" y="247" width="100" height="34"/>
+                    <color key="backgroundColor" red="0.070588238537311554" green="0.59215688705444336" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="wZQ-se-rVW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Pay">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="payMethod:" destination="-1" eventType="touchUpInside" id="ASq-JP-p2C"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit: $19.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W2-I4-Wg5">
+                    <rect key="frame" x="36" y="139" width="121" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phV-8Z-gYW">
+                    <rect key="frame" x="29" y="36" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelMethod:" destination="-1" eventType="touchUpInside" id="KDS-f9-Siw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uWa-ib-Yfg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="3Ff-R8-Nim"/>
+                <constraint firstItem="rAW-TR-V25" firstAttribute="top" secondItem="uWa-ib-Yfg" secondAttribute="bottom" constant="28" id="GK3-Pa-gxF"/>
+                <constraint firstItem="uWa-ib-Yfg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J07-j5-Fp3"/>
+                <constraint firstItem="6W2-I4-Wg5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="Lpx-qS-3ga"/>
+                <constraint firstItem="uWa-ib-Yfg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="175" id="PBh-KL-bLJ"/>
+                <constraint firstItem="rAW-TR-V25" firstAttribute="centerX" secondItem="uWa-ib-Yfg" secondAttribute="centerX" id="nvH-VN-opE"/>
+                <constraint firstItem="6W2-I4-Wg5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="139" id="zFa-X9-Jx7"/>
+            </constraints>
+            <point key="canvasLocation" x="209" y="263"/>
+        </view>
+    </objects>
+</document>

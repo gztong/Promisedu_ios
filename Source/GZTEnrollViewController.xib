@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GZTEnrollViewController">
+            <connections>
+                <outlet property="enrollButton" destination="KSc-NI-Efv" id="X4d-ID-EwE"/>
+                <outlet property="laterButton" destination="bn0-gS-88R" id="6ti-ji-ZIo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programming Mobile Applications for Android" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtP-N1-Ajc">
+                    <rect key="frame" x="22" y="94" width="329" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MR-7s-AwR">
+                    <rect key="frame" x="8" y="168" width="584" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will get full refund after finishing the course, and even get some extra rewards." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-wD-yrM">
+                            <rect key="frame" x="38" y="37" width="511" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="BVt-QB-Wtu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will get money back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWx-zZ-lKN">
+                            <rect key="frame" x="38" y="15" width="226" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="226" id="nIE-HR-DhD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSc-NI-Efv">
+                            <rect key="frame" x="38" y="119" width="108" height="46"/>
+                            <color key="backgroundColor" red="0.070588238537311554" green="0.59215688705444336" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Enroll">
+                                <color key="titleColor" red="0.93852588380000002" green="0.93852588380000002" blue="0.93852588380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="enrollMethod:" destination="-1" eventType="touchUpInside" id="eeX-g8-6gW"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1t-E9-k8n">
+                            <rect key="frame" x="0.0" y="190" width="584" height="10"/>
+                            <color key="backgroundColor" red="0.65275493421052644" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.36433699324324326" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="Iqb-RO-DfC"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM0-8H-9gF">
+                            <rect key="frame" x="458" y="8" width="59" height="35"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PM0-8H-9gF" secondAttribute="trailing" constant="67" id="1n2-dX-foZ"/>
+                        <constraint firstItem="FWx-zZ-lKN" firstAttribute="top" secondItem="4MR-7s-AwR" secondAttribute="top" constant="15" id="3FK-Xr-czL"/>
+                        <constraint firstAttribute="bottom" secondItem="f1t-E9-k8n" secondAttribute="bottom" id="5Fg-La-2vs"/>
+                        <constraint firstItem="FWx-zZ-lKN" firstAttribute="leading" secondItem="8jL-wD-yrM" secondAttribute="leading" id="BTe-5x-eVG"/>
+                        <constraint firstItem="8jL-wD-yrM" firstAttribute="top" secondItem="FWx-zZ-lKN" secondAttribute="bottom" constant="1" id="EIv-8w-thN"/>
+                        <constraint firstItem="8jL-wD-yrM" firstAttribute="leading" secondItem="4MR-7s-AwR" secondAttribute="leading" constant="38" id="Fa1-LJ-GEc"/>
+                        <constraint firstItem="PM0-8H-9gF" firstAttribute="top" secondItem="4MR-7s-AwR" secondAttribute="top" constant="8" id="WzW-cc-hgv"/>
+                        <constraint firstItem="PM0-8H-9gF" firstAttribute="baseline" secondItem="FWx-zZ-lKN" secondAttribute="baseline" constant="7" id="fQZ-DK-7o7"/>
+                        <constraint firstItem="8jL-wD-yrM" firstAttribute="top" secondItem="4MR-7s-AwR" secondAttribute="top" constant="37" id="gen-zc-OAy"/>
+                        <constraint firstAttribute="height" constant="200" id="nV1-65-49Y"/>
+                        <constraint firstItem="f1t-E9-k8n" firstAttribute="leading" secondItem="4MR-7s-AwR" secondAttribute="leading" id="t7Q-JY-hge"/>
+                        <constraint firstAttribute="trailing" secondItem="8jL-wD-yrM" secondAttribute="trailing" constant="35" id="uSa-g1-5XO"/>
+                        <constraint firstAttribute="trailing" secondItem="f1t-E9-k8n" secondAttribute="trailing" id="viD-Zk-AZN"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="University of Maryland | CS001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MR-7n-rkC">
+                    <rect key="frame" x="22" y="122.5" width="236" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn0-gS-88R">
+                    <rect key="frame" x="231" y="383" width="139" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="139" id="mZj-Et-Slv"/>
+                    </constraints>
+                    <state key="normal" title="Make a commit later"/>
+                    <connections>
+                        <action selector="laterMethod:" destination="-1" eventType="touchUpInside" id="7ja-ZU-3YC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-U3-ALv">
+                    <rect key="frame" x="20" y="498.5" width="934" height="83.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="OyZ-Tw-P7Z"/>
+                    </constraints>
+                    <string key="text">Note: After enroll with a deposit, you make a commit to finish the course before deadline. If you miss the due 3 times, you can't get deposit back.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93852588383838387" green="0.93852588383838387" blue="0.93852588383838387" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="X3V-U3-ALv" secondAttribute="bottom" constant="18" id="9WE-S4-e68"/>
+                <constraint firstItem="X3V-U3-ALv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Khi-nf-mH9"/>
+                <constraint firstItem="X3V-U3-ALv" firstAttribute="top" secondItem="f1t-E9-k8n" secondAttribute="bottom" constant="130.5" id="a0Z-Uw-qgy"/>
+                <constraint firstItem="bn0-gS-88R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dsc-hK-efT"/>
+                <constraint firstItem="OtP-N1-Ajc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="fAv-QH-dTl"/>
+                <constraint firstAttribute="trailing" secondItem="X3V-U3-ALv" secondAttribute="trailing" constant="20" id="k66-Ca-D1l"/>
+                <constraint firstItem="4MR-7s-AwR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="li3-xm-9P6"/>
+                <constraint firstItem="OtP-N1-Ajc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="mDW-Ta-Q10"/>
+                <constraint firstItem="bn0-gS-88R" firstAttribute="top" secondItem="4MR-7s-AwR" secondAttribute="bottom" constant="15" id="sg1-1R-vEk"/>
+                <constraint firstItem="4MR-7s-AwR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="168" id="yAn-wI-yeR"/>
+                <constraint firstAttribute="trailing" secondItem="4MR-7s-AwR" secondAttribute="trailing" constant="8" id="ziv-qz-uCz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,12 @@
+.DS_Store
+
+xcuserdata
+*.xcuserstate
+*.xcbkptlist
+*.xccheckout
+
+.gradle
+build
+/edx.properties
+default_config/local.yaml 
+*.gcda
